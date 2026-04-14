@@ -1,0 +1,16 @@
+# Generated files
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+
+# OS files
+.DS_Store
+Thumbs.db
