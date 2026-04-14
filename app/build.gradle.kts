@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.gohan.footballgroups"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.gohan.footballgroups"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -81,6 +81,10 @@ dependencies {
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
+
+    // Room (needed by DatabaseModule)
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
 
     // Coroutines
     implementation(libs.coroutines.android)
